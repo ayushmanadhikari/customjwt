@@ -12,7 +12,7 @@ def generate_access_token(user):
         'iat': datetime.now(),
         'type': 'access'
     }
-    return jwt.encode(payload, settings.SECRET_KEY, algorithm='HSA256')
+    return jwt.encode(payload, settings.JWT_SECRET_KEY, algorithm='HSA256')
 
 
 def generate_refresh_token(user):
@@ -22,4 +22,4 @@ def generate_refresh_token(user):
         'iat': datetime.now(),
         'type': 'refresh'
     }
-    return jwt.encode(payload, settings.SECRET_KEY, algorithm='HSA256')
+    return jwt.encode(payload, settings.JWT_SECRET_KEY, algorithm='HSA256')

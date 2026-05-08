@@ -131,3 +131,6 @@ REST_FRAMEWORK = {
         'jwt_authenticate.authenticate.CustomJWTAuthentication',
     ]
 }
+
+JWT_SECRET_KEY = 'as8EIJ28jM536Mgf6Eyw4FmmwQcwfqTZRxBTN5Z2Mic'
+DJANGO_SECRET_KEY = 'K78eIZNDRXIvV54jyjEfuBIvYl7KPCERyZYfZOe71E3'
