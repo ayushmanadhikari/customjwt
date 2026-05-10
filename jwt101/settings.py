@@ -129,7 +129,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'jwt_authenticate.authenticate.CustomJWTAuthentication',
-    ]
+    ],
 }
 
 JWT_SECRET_KEY = 'as8EIJ28jM536Mgf6Eyw4FmmwQcwfqTZRxBTN5Z2Mic'
